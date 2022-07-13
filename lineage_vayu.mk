@@ -22,6 +22,9 @@ TARGET_ENABLE_BLUR := false
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Lawnchair
+$(call inherit-product, vendor/lawnchair/lawnchair.mk)
+
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
