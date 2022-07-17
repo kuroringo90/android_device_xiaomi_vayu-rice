@@ -22,7 +22,7 @@ RICE_OFFICIAL := true
 TARGET_ENABLE_BLUR := false
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
+#WITH_GMS := true
 
 # Lawnchair
 $(call inherit-product, vendor/lawnchair/lawnchair.mk)
