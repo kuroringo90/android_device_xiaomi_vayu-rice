@@ -17,8 +17,8 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Rom flags
 RICE_MAINTAINER := Ste0090•Restintrip
+RICE_DEVICE := vayu
 RICE_OFFICIAL := true
-RICE_DEVICE := X3 Pro
 TARGET_ENABLE_BLUR := false
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
