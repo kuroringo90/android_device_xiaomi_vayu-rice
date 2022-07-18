@@ -240,4 +240,7 @@
         <item>910</item>
         <item>150</item>
     </array>
+
+    <!-- Determines whether the shell features all run on another thread. -->
+     <bool name="config_enableShellMainThread">true</bool>
 </resources>
