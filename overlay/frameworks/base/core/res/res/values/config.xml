@@ -243,4 +243,13 @@
 
     <!-- Determines whether the shell features all run on another thread. -->
      <bool name="config_enableShellMainThread">true</bool>
+
+    <!-- Defines the actions shown in advanced reboot submenu -->
+    <string-array name="config_restartActionsList">
+        <item>restart</item>
+        <item>restart_recovery</item>
+        <item>restart_fastboot</item>
+        <item>restart_bootloader</item>
+        <item>restart_sysui</item>
+     </string-array>
 </resources>
