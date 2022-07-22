@@ -22,6 +22,7 @@ RICE_OFFICIAL := true
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 SUSHI_BOOTANIMATION  := 1080
+RICE_CHIPSET := SDM860
 
 # Lawnchair
 $(call inherit-product, vendor/lawnchair/lawnchair.mk)
