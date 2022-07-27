@@ -24,9 +24,6 @@ TARGET_SUPPORTS_QUICK_TAP := true
 SUSHI_BOOTANIMATION  := 1080
 RICE_CHIPSET := SDM860
 
-# Lawnchair
-$(call inherit-product, vendor/lawnchair/lawnchair.mk)
-
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
