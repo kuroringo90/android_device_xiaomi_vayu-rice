@@ -14,6 +14,8 @@ $(call inherit-product, vendor/calyx/config/common.mk)
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
+# Lawnchair
+$(call inherit-product, vendor/lawnchair/lawnchair.mk)
 
 PRODUCT_NAME := calyx_vayu
 PRODUCT_DEVICE := vayu
