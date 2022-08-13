@@ -19,7 +19,7 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 RICE_MAINTAINER := Ste0090•Restintrip
 RICE_DEVICE := vayu
 RICE_OFFICIAL := true
-TARGET_ENABLE_BLUR := false
+TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 SUSHI_BOOTANIMATION  := 1080
 RICE_CHIPSET := SDM860
