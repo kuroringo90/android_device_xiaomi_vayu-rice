@@ -21,6 +21,10 @@ RICE_OFFICIAL := true
 TARGET_ENABLE_BLUR := true
 SUSHI_BOOTANIMATION  := 1080
 RICE_CHIPSET := SDM860
+# Gapps
+WITH_GMS := true
+RICE_PACKAGE_TYPE := GAPPS
+$(call inherit-product, vendor/gms/products/gms.mk)
 
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
