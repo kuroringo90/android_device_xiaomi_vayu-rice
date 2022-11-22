@@ -9,21 +9,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Rom flags
-RICE_MAINTAINER := Ste0090•Restintrip
-RICE_DEVICE := vayu
-RICE_OFFICIAL := true
-TARGET_ENABLE_BLUR := true
-SUSHI_BOOTANIMATION  := 1080
-RICE_CHIPSET := SDM860
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Device Specific Flags
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_BOOT_ANIMATION_RES := 1440
 
-PRODUCT_NAME := lineage_vayu
+# VoidUI Environment Flags
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP  := true
+TARGET_USES_MINI_GAPPS := false
+
+# VoidUI Maintainer Flags
+VOID_MAINTAINER := ThePerryTeam
+CUSTOM_BUILD_TYPE := COMMUNITY
+
+PRODUCT_NAME := aosp_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
