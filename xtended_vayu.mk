@@ -8,28 +8,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Device Specific Flags
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_BOOT_ANIMATION_RES := 1440
+XTENDED_BUILD_MAINTAINER := PerryTheTeam
 
-# VoidUI Environment Flags
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_QUICK_TAP  := true
-TARGET_USES_MINI_GAPPS := false
-
-# VoidUI Maintainer Flags
-VOID_MAINTAINER := ThePerryTeam
-CUSTOM_BUILD_TYPE := COMMUNITY
-
-PRODUCT_NAME := aosp_vayu
+PRODUCT_NAME := xtended_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_vayu.mk
+    $(LOCAL_DIR)/xtended_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_vayu-user \
-    aosp_vayu-userdebug \
-    aosp_vayu-eng
+    xtended_vayu-user \
+    xtended_vayu-userdebug \
+    xtended_vayu-eng
