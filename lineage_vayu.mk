@@ -15,13 +15,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Rom flags
-RICE_MAINTAINER := Ste0090•Restintrip
-RICE_DEVICE := vayu
-RICE_OFFICIAL := true
-TARGET_ENABLE_BLUR := true
-SUSHI_BOOTANIMATION  := 1080
-RICE_CHIPSET := SDM860
+WITH_GMS := true
+PALYRIM_BUILD_TYPE := UNOFFICIAL
+PALYRIM_MAINTAINER := Theperryteam
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
