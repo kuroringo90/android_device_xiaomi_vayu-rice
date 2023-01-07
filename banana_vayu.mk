@@ -17,6 +17,7 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Rom flags
 BANANA_MAINTAINER := PerryTheTeam
 BANANA_BUILD_TYPE := UNOFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_NAME := banana_vayu
 PRODUCT_DEVICE := vayu
