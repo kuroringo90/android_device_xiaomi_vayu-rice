@@ -15,7 +15,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Rom flags
-RICE_MAINTAINER := Ste0090•Restintrip
 RICE_DEVICE := vayu
 RICE_OFFICIAL := true
 TARGET_ENABLE_BLUR := true
