@@ -18,6 +18,7 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 BANANA_MAINTAINER := PerryTheTeam
 BANANA_BUILD_TYPE := UNOFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := banana_vayu
 PRODUCT_DEVICE := vayu
