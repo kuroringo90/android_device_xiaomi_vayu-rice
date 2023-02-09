@@ -14,6 +14,16 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
+# Rom flags
+RICE_DEVICE := vayu
+RICE_OFFICIAL := true
+TARGET_ENABLE_BLUR := true
+SUSHI_BOOTANIMATION  := 1080
+RICE_CHIPSET := SDM860
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_BUILD_APERTURE_CAMERA := true
+
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
