@@ -17,6 +17,7 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+ANCIENT_OFFICIAL := true
 
 PRODUCT_NAME := ancient_vayu
 PRODUCT_DEVICE := vayu
