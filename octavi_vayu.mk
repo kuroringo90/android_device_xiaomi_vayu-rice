@@ -8,18 +8,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common AncientOS stuff
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+# Inherit some common OctaviOS stuff
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-ANCIENT_OFFICIAL := true
+OCTAVI_MAINTAINER := PERRYTHETEAM
 
-PRODUCT_NAME := ancient_vayu
+PRODUCT_NAME := octavi_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO

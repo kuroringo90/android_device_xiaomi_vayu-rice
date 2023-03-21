@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_vayu.mk
+    $(LOCAL_DIR)/octavi_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_vayu-user \
-    ancient_vayu-userdebug \
-    ancient_vayu-eng
+    octavi_vayu-user \
+    octavi_vayu-userdebug \
+    octavi_vayu-eng
