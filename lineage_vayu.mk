@@ -10,12 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_DISABLE_EPPE := true
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
-
-# Sushi Boot Animation
-SUSHI_BOOTANIMATION  := 1080
 
 # Rice
 RICE_MAINTAINER := ste0090xrestintrip
@@ -24,9 +23,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USE_PIXEL_FINGERPRINT := false
 
 WITH_GMS := true
-TARGET_CORE_GMS := true
-TARGET_CORE_GMS_EXTRAS := true
-TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_CORE_GMS := false
+TARGET_CORE_GMS_EXTRAS := false
+TARGET_USE_GOOGLE_TELEPHONY :=true 
 
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
