@@ -8,26 +8,19 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_DISABLE_EPPE := true
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
+# Inherit some common YAAP stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Rice
-RICE_MAINTAINER := ste0090xrestintrip
-TARGET_ENABLE_BLUR := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USE_PIXEL_FINGERPRINT := false
 
-WITH_GMS := true
-TARGET_CORE_GMS := false
-TARGET_CORE_GMS_EXTRAS := false
-TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_BUILD_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_vayu
+PRODUCT_NAME := yaap_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
