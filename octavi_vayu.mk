@@ -15,6 +15,7 @@ $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 OCTAVI_MAINTAINER := PERRYTHETEAM
+USE_PIXEL_CHARGER := true
 
 PRODUCT_NAME := octavi_vayu
 PRODUCT_DEVICE := vayu
