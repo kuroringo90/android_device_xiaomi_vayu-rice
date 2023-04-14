@@ -81,6 +81,8 @@ void vendor_load_properties() {
     search_variant(variants);
 
     // Misc
-    property_override("ro.rice.chipset", "SDM860");
+    property_override("ro.rising.chipset", "SDM860");
+    property_override("ro.rising.device", "POCO X3 PRO");
+    property_override("ro.rising.maintainer", "ste0090 | restintrip");
 
 }
