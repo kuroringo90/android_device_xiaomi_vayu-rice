@@ -21,10 +21,12 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USE_PIXEL_FINGERPRINT := false
+TARGET_EXCLUDES_APERTURE := false
 
 TARGET_CORE_GMS := false
 TARGET_CORE_GMS_EXTRAS := false
 TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_EXCLUDES_SEEDVAULT := true
 
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
