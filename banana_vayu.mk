@@ -8,25 +8,18 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Banana stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_DISABLE_EPPE := true
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Rice
+# Banana
+BANANA_MAINTAINER := PerryTheTeam
 TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USE_PIXEL_FINGERPRINT := false
-TARGET_EXCLUDES_APERTURE := false
-TARGET_USE_PIXEL_FINGERPRINT := false
-
-TARGET_CORE_GMS := false
-TARGET_CORE_GMS_EXTRAS := false
-TARGET_USE_GOOGLE_TELEPHONY := true
-TARGET_EXCLUDES_SEEDVAULT := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
