@@ -20,7 +20,7 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USE_PIXEL_FINGERPRINT := false
-TARGET_EXCLUDES_APERTURE := false
+TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_USE_PIXEL_FINGERPRINT := false
 
 TARGET_CORE_GMS := false
