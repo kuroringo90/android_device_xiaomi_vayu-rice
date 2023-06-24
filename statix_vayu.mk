@@ -15,6 +15,11 @@ $(call inherit-product, vendor/statix/config/gsm.mk)
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
+# StatiX flags
+ENABLE_GAMETOOLS := true
+INCLUDE_PIXEL_LAUNCHER := true
+TARGET_USES_BLUR := true
+
 PRODUCT_NAME := statix_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
