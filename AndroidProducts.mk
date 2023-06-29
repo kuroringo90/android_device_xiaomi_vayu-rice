@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_vayu.mk
+    $(LOCAL_DIR)/kenvyra_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_vayu-user \
-    lineage_vayu-userdebug \
-    lineage_vayu-eng
+    kenvyra_vayu-user \
+    kenvyra_vayu-userdebug \
+    kenvyra_vayu-eng
