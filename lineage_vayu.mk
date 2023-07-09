@@ -17,10 +17,8 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Rice
 TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GMS := true
-TARGET_CORE_GMS := true
-TARGET_CORE_GMS_EXTRAS := true
 TARGET_ENABLE_PRIVAPP_ENFORCEMENT := false
+TARGET_PREBUILT_GCAM := true
 
 PRODUCT_NAME := lineage_vayu
 PRODUCT_DEVICE := vayu
