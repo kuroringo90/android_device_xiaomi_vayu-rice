@@ -1,6 +1,4 @@
 # Refresh Rate
-ro.surface_flinger.enable_layer_caching=true
-debug.sf.layer_caching_active_layer_timeout_ms=1000
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=80
 ro.surface_flinger.set_touch_timer_ms=200
