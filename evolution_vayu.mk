@@ -4,28 +4,25 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from those products. Most specific first.
+# Inherit common products
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# Inherit from vayu device
+# Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Rice
-TARGET_ENABLE_BLUR := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_ENABLE_PRIVAPP_ENFORCEMENT := false
-TARGET_PREBUILT_GCAM := true
-TARGET_USE_GOOGLE_TELEPHONY := true
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_vayu
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_USES_PICO_GAPPS := true
+
+PRODUCT_NAME := evolution_vayu
 PRODUCT_DEVICE := vayu
-PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO X3 Pro
+PRODUCT_MODEL := Poco X3 Pro
+PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
