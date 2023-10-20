@@ -14,11 +14,20 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-PRODUCT_NAME := lineage_vayu
+# Inherit common miku configurations
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DISABLE_EPPE := true
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
+
+#MikuUI properties
+MIKU_MASTER := PerryTheTeam
+
+PRODUCT_NAME := miku_vayu
 PRODUCT_DEVICE := vayu
-PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 Pro
+PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
