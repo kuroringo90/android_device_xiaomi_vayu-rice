@@ -8,17 +8,21 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Banana stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-PRODUCT_NAME := lineage_vayu
+PRODUCT_NAME := banana_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 Pro
+
+TARGET_BOOT_ANIMATION_RES := 1080
+BANANA_MAINTAINER := PerryTheTeam
+TARGET_ENABLE_BLUR := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
