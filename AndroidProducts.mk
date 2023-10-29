@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_vayu_vayu.mk
+    $(LOCAL_DIR)/banana_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
     banana_vayu-user \
