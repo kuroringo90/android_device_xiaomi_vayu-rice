@@ -8,13 +8,24 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Rising stuff.
+$(call inherit-product, vendor/rising/config/rising.mk)
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-PRODUCT_NAME := lineage_vayu
+# Device Identifiers
+RISING_MAINTAINER := ste0090
+RISING_CHIPSET := SDM860
+RISING_STORAGE := 256gb
+RISING_RAM := 8gb
+RISING_BATTERY := 5160mah
+RISING_DISPLAY := 2400×1080
+
+WITH_GMS := true
+TARGET_PREBUILT_PIXEL_LAUNCHER := false
+
+PRODUCT_NAME := rising_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
