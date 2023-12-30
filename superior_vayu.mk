@@ -8,23 +8,29 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Inherit some common SuperiorExtendedOS  stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
+
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit common miku configurations
-$(call inherit-product, vendor/miku/build/product/miku_product.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_DISABLE_EPPE := true
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
-
-#MikuUI properties
-MIKU_MASTER := PerryTheTeam
-
-PRODUCT_NAME := miku_vayu
+PRODUCT_NAME := superior_vayu
 PRODUCT_DEVICE := vayu
+PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 Pro
-PRODUCT_MANUFACTURER := Xiaomi
+
+TARGET_INCLUDE_MATLOG := false
+TARGET_INCLUDE_PIXEL_CHARGER := true
+USE_MOTO_CALCULATOR := false
+TARGET_SUPPORTS_BLUR := true
+USE_MOTO_CLOCK := false
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+USE_QUICKPIC := false
+USE_DUCKDUCKGO := false
+TARGET_FACE_UNLOCK_SUPPORTED := false
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
