@@ -8,26 +8,24 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Rising stuff.
-$(call inherit-product, vendor/rising/config/rising.mk)
+# Inherit some common blackiron stuff.
+$(call inherit-product, vendor/blackiron/config/common_full_phone.mk)
 
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Device Identifiers
-RISING_MAINTAINER := ste0090
-RISING_CHIPSET := SDM860
-
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 WITH_GMS := true
-TARGET_USE_GOOGLE_TELEPHONY := true
 TARGET_ENABLE_BLUR := true
 TARGET_PREBUILT_PIXEL_LAUNCHER := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
-USER_BUILD_NO_CHANGELOG := 1
-TARGET_DISABLE_EPPE := true
-INLINE_KERNEL_BUILDING := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := rising_vayu
+PRODUCT_NAME := blackiron_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO

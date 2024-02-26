@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_vayu.mk
+    $(LOCAL_DIR)/blackiron_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    rising_vayu-user \
-    rising_vayu-userdebug \
-    rising_vayu-eng
+    blackiron_vayu-user \
+    blackiron_vayu-userdebug \
+    blackiron_vayu-eng
