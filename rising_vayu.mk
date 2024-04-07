@@ -15,8 +15,9 @@ $(call inherit-product, vendor/rising/config/rising.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Device Identifiers
-RISING_MAINTAINER := ste0090
-RISING_CHIPSET := SDM860
+PRODUCT_BUILD_PROP_OVERRIDES += \
+   RISING_MAINTAINER="ste0090" \
+   RISING_CHIPSET="SDM860"    
 
 WITH_GMS := true
 TARGET_CORE_GMS := true
