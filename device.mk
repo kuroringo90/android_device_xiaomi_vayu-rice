@@ -44,6 +44,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     VayuWifiOverlay
 
+# Android Auto
+PRODUCT_PACKAGES += \
+    AndroidAutoStubPrebuilt
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
