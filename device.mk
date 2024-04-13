@@ -48,6 +48,10 @@ PRODUCT_COPY_FILES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Android Auto
+PRODUCT_PACKAGES += \
+    AndroidAutoStubPrebuilt
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
