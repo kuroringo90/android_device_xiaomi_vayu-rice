@@ -50,7 +50,8 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Android Auto
 PRODUCT_PACKAGES += \
-    AndroidAutoStubPrebuilt
+    AndroidAutoStubPrebuilt \
+    GoogleTTS
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
