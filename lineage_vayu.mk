@@ -15,11 +15,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Device Identifiers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-   RISING_CHIPSET="SDM860" \
-    RISING_MAINTAINER="ste0090"
 
-WITH_GMS := true
+RISING_MAINTAINER=ste0090
+
+
+WITH_GMS := false
 TARGET_CORE_GMS := true
 TARGET_CORE_GMS_EXTRAS := true
 TARGET_USE_GOOGLE_TELEPHONY := true

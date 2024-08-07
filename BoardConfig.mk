@@ -21,9 +21,6 @@ TARGET_SCREEN_DENSITY := 410
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_vayu
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_vayu
 
-# Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/vayu.config
-
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 

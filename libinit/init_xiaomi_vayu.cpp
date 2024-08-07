@@ -11,6 +11,30 @@
 
 #define FINGERPRINT "POCO/vayu_global/vayu:13/RKQ1.200826.002/V14.0.3.0.TJUMIXM:user/release-keys"
 
+#include <android-base/logging.h>
+#include <android-base/properties.h>
+
+#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/_system_properties.h>
+
+using android::base::GetProperty;
+
+/*
+ * SetProperty does not allow updating read only properties and as a result
+ * does not work for our use case. Write "OverrideProperty" to do practically
+ * the same thing as "SetProperty" without this restriction.
+ */
+void OverrideProperty(const char* name, const char* value) {
+    size_t valuelen = strlen(value);
+
+    prop_info* pi = (prop_info*)__system_property_find(name);
+    if (pi != nullptr) {
+        __system_property_update(pi, value, valuelen);
+    } else {
+        __system_property_add(name, strlen(name), value, valuelen);
+    }
+}
+
 static const variant_info_t bhima_info = {
     .hwc_value = "INDIA",
     .sku_value = "",
@@ -47,4 +71,5 @@ static const std::vector<variant_info_t> variants = {
 void vendor_load_properties() {
     set_dalvik_heap();
     search_variant(variants);
+    OverrideProperty("ro.rising.maintainer", "ste0090");
 }
