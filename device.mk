@@ -62,3 +62,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/vayu/vayu-vendor.mk)
+
+PRODUCT_PACKAGES += \
+    Aperture
