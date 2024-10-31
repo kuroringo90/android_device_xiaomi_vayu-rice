@@ -67,12 +67,12 @@ static const std::vector<variant_info_t> variants = {
 void vendor_load_properties() {
     set_dalvik_heap();
     search_variant(variants);
-    property_override("ro.rising.chipset", "Snapdragon 860 (7nm)");
-    property_override("ro.rising.maintainer", "Ste0090 • honokascape");
-    property_override("service.adb.root", "1");
-    property_override("ro.adb.secure", "0");
-    property_override("ro.debuggable", "1");
-    property_override("ro.force.debuggable", "1");
-    property_override("persist.sys.usb.config", "adb");
-    property_override("sys.usb.config", "adb");
+    OverrideProperty("ro.rising.chipset", "Snapdragon 860 (7nm)");
+    OverrideProperty("ro.rising.maintainer", "Ste0090 • honokascape");
+    OverrideProperty("service.adb.root", "1");
+    OverrideProperty("ro.adb.secure", "0");
+    OverrideProperty("ro.debuggable", "1");
+    OverrideProperty("ro.force.debuggable", "1");
+    OverrideProperty("persist.sys.usb.config", "adb");
+    OverrideProperty("sys.usb.config", "adb");
 }
