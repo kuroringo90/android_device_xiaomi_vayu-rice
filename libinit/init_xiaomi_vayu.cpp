@@ -69,10 +69,4 @@ void vendor_load_properties() {
     search_variant(variants);
     OverrideProperty("ro.rising.chipset", "Snapdragon 860 (7nm)");
     OverrideProperty("ro.rising.maintainer", "Ste0090 • honokascape");
-    OverrideProperty("service.adb.root", "1");
-    OverrideProperty("ro.adb.secure", "0");
-    OverrideProperty("ro.debuggable", "1");
-    OverrideProperty("ro.force.debuggable", "1");
-    OverrideProperty("persist.sys.usb.config", "adb");
-    OverrideProperty("sys.usb.config", "adb");
 }
