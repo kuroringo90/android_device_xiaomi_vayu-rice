@@ -214,5 +214,11 @@ vendor.usb.product_string=Poco X3 Pro
 # WiFi
 wifi.aware.interface=wifi-aware0
 
+# LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=50
+ro.lmk.filecache_min_kb=153600
+ro.lmk.stall_limit_critical=40
+
 # System
 persist.sys.binary_xml=false
