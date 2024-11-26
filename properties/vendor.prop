@@ -228,5 +228,9 @@ ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=24
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|945|150|local:4630946480857061761
+
 # System
 persist.sys.binary_xml=false
