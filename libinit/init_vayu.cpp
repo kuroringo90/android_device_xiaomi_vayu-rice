@@ -104,6 +104,8 @@ void vendor_load_properties()
 
     load_dalvik_properties();
 
+    property_override("ro.rising.chipset", "Snapdragon 860 (7nm)");
+    property_override("ro.rising.maintainer", "Ste0090 • honokascape");
 //  SafetyNet workaround
     property_override("ro.boot.verifiedbootstate", "green");
 //  Enable transitional log for Privileged permissions
