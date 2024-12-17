@@ -67,6 +67,4 @@ static const std::vector<variant_info_t> variants = {
 void vendor_load_properties() {
     set_dalvik_heap();
     search_variant(variants);
-    OverrideProperty("ro.rising.chipset", "Snapdragon 860 (7nm)");
-    OverrideProperty("ro.rising.maintainer", "Ste0090 • honokascape");
 }
