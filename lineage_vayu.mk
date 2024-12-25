@@ -20,10 +20,12 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 Pro
 
-RISING_MAINTAINER=Ste0090 • honokascape
 
-# Gms 
+# BLKI
+BLACKIRON_MAINTAINER := ste0090
 WITH_GMS := true
+# Inherit from release keys
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

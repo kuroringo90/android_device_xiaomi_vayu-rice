@@ -60,6 +60,9 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# VINTF
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/vayu/vayu-vendor.mk)
 
