@@ -20,13 +20,10 @@ PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3 Pro
-
-
-# BLKI
-BLACKIRON_MAINTAINER := ste0090
-WITH_GMS := true
-# Inherit from release keys
-$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+TARGET_DISABLE_EPPE := true
+AXION_MAINTAINER := ste
+AXION_PROCESSOR := Snapdragon_870
+TARGET_PREBUILT_BCR := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

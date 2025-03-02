@@ -65,6 +65,3 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/vayu/vayu-vendor.mk)
-
-PRODUCT_PACKAGES += \
-    Aperture
