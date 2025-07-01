@@ -15,6 +15,12 @@ $(call inherit-product, vendor/arfox/config/common_full_phone.mk)
 # Inherit from vayu device
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
+#Inherit from release keys
+$(call inherit-product, vendor/arfox-priv/keys/keys.mk)
+
+INLINE_KERNEL_BUILDING := true
+WITH_GMS := true
+
 PRODUCT_NAME := arfox_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_MANUFACTURER := Xiaomi
